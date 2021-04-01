@@ -1,7 +1,7 @@
 class Player {
     constructor(column, row) {
-        this.col = column-1;
-        this.row = row-1;
+        this.col = column - 1;
+        this.row = row - 1;
         //this.xPos = this.col*50;
         //this.yPos = this.row*50;
         this.maxUpLef = 0;
@@ -9,38 +9,34 @@ class Player {
         this.image = null;
     }
     moveUp() {
-        if (this.row <= 9) {
-            this.row ++;
+        if (this.row >= 1) {
+            this.row--;
             console.log('went up' + this.row);
         }
     }
     moveDown() {
-        if (this.row >= 2) {
-            this.row --;
+        if (this.row < 9) {
+            this.row++;
             console.log('went down' + this.row);
         }
     }
-    moveLeft() {  
-        if (this.col <= 9) {
-            this.col ++;
+    moveLeft() {
+        if (this.col >= 1) {
+            this.col--;
             console.log('went left' + this.col);
         }
     }
     moveRight() {
-        if(this.col >= 2){
-            this.col --;
+        if (this.col < 9) {
+            this.col++;
             console.log('went right' + this.col);
         }
-        
+
     }
     draw(img) {
         this.image = img;
-        image(this.image, this.row*50, this.col*50, 50, 50)
+        image(this.image, this.col * 50, this.row * 50, 50, 50)
     }
-    calcPos(){
-
-    }
-    
 }
 
 
