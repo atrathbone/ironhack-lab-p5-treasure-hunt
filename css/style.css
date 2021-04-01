@@ -8,4 +8,34 @@ body {
 
 h1 {
   font-weight: 100;
+  color: greenyellow;
+}
+
+.heading {
+  border: orangered solid 2px;
+  border-radius: 25px;
+  background-color: blue;
+  padding: 0 200px;
+}
+
+.points-area {
+  border: orangered solid 2px;
+  border-radius: 25px;
+  text-align: center;
+  color: greenyellow;
+  font-size: medium;
+  background-color: hotpink;
+  padding: 0 50px;
+  box-shadow: 10px 5px 5px red;
+}
+
+.how-to {
+  border: orangered solid 2px;
+  border-radius: 25px;
+  text-align: center;
+  color: greenyellow;
+  background-color: mediumvioletred;
+  font-size: medium;
+  padding: 0 50px;
+  box-shadow: 10px 5px 5px red;
 }

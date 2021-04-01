@@ -8,11 +8,22 @@
     <title>Splatoon</title>
   </head>
   <body>
-    <h1>GRID</h1>
+    <div class="heading"><h1>Grid</h1></div>
     <div id="canvas"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
     <script src="src/constants.js"></script>
+    <script src="src/player.js"></script>
     <script src="src/game.js"></script>
     <script src="src/main.js"></script>
+    
+    <div class="points-area">
+      <h1>Points</h1>
+      <p><span id="#points">0</span> points</p>
+    </div>
+    <div class="how-to">
+      <p>HOW TO PLAY</p>
+      <p>Arrow keys - move</p>
+      <p>Collect the gems for max points</p>
+    </div>
   </body>
 </html>
