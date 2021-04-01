@@ -8,6 +8,7 @@ let treasureIMG = null;
 let currentFacing = 'down';
 
 
+
 function setup() {
   let canvas = createCanvas(WIDTH, HEIGHT);
   canvas.parent("canvas");
